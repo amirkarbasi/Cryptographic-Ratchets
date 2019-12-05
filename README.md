@@ -8,7 +8,7 @@ sudo apt-get install gcc libffi-dev libsodium-dev python-dev
 # If using Fedora
 sudo yum install gcc libffi-devel libsodium-devel python-devel redhat-rpm-config
 
-# Then install
+# Then install in Python 2
 pip install PyNaCl
 
 pip install passlib
