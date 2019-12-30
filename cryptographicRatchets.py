@@ -187,9 +187,9 @@ class Axolotl(object):
             PNs = 0
             ratchet_flag = True
         else: # The_Second_Sensor Mode
-            HKs = kdf(mkey, SALTS['HK'][The_Second_Sensor])
+            HKs = kdf(mkey, SALTS['HK'][The_First_Sensor])
             HKr = None
-            CKs = kdf(mkey, SALTS['CK'][The_Second_Sensor])
+            CKs = kdf(mkey, SALTS['CK'][The_First_Sensor])
             CKr = None
             DHRs_priv = priv_ratchet_key
             DHRs = ratchet_key
